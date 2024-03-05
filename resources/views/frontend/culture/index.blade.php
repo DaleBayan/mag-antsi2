@@ -20,7 +20,7 @@
                                 <a class="floating-button d-block d-md-none" data-bs-toggle="offcanvas" href="#offcanvasSideBar" role="button" aria-controls="offcanvasSideBar">
                                   <i class="fa fa-plus mt-3 text-white"></i>
                                 </a>
-                                <h1 class="fw-bold text-success">{{ $culture->title }}</h1>
+                                <h1 class="fw-bold text-success">@if (isset( $culture->title )) {{ $culture->title }} @endif</h1>
                                 <p class="lead px-4">{!! $culture->description !!}</p>
                                 <a class="btn btn-danger sliding-icon mt-2 py-2">Read more <i class="fa-sharp fa-solid fa-circle-chevron-right ms-4"></i></a>
                             </div>

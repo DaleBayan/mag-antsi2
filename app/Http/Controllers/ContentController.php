@@ -35,7 +35,7 @@ class ContentController extends Controller
     public function store(StoreContentRequest $request)
     {
         $contentExist = Content::where('slug', Str::slug($request->title_eng))->first();
-        dd($contentExist->slug);
+        // dd($contentExist->slug);
         $contentInfo = $request->validated(); 
         if(!isset($contentExist->slug)){
 
